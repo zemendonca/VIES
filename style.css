@@ -5,6 +5,7 @@
   --salmao: #ff4e62;
   --preto: #000;
   --cinza-claro: #b8b0b8;
+  --vermelho-escuro: #1e070a;
 }
 
 html,
@@ -43,10 +44,16 @@ button.menu-button-inactive {
 
 /* ==============MAIN=============*/
 
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
 img.main-logo {
-  width: 32.2rem;
+  width: 100vw;
   height: 17.4rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
 main section.home {
@@ -75,15 +82,27 @@ button.whatsapp-button {
   justify-content: center;
   display: inline-flex;
   gap: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .benefits-list {
   color: var(--salmao);
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  margin-top: 6rem;
 }
 
-li {
-  display: inline-flex;
-  padding-top: rem;
+ul.benefits-list li p {
+  padding: 2rem 2rem;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+ul.benefits-list li img {
+  justify-content: space-between;
+  width: 50%;
+  max-width: 93px;
 }
